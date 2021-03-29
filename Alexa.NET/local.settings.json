@@ -1,0 +1,14 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "ALEXA_CLIENT_ID": "amzn1.application-oa2-client.5d8130c1838943a6a2ea7768f4735196",
+    "ALEXA_CLIENT_SECRET": "584b5cfcf5dc2ea7284bf5ec2e7acd5d6f9ed168400f44d5906abf1b9c8adb32",
+    "TWITCH_CLIENT_ID": "nr4zo5t27x4y2mxkk8w1s2qb4vat6t",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "KEY_VAULT_URL": "https://twitch-alexa-kv.vault.azure.net",
+    "GOOGLE_PROJECT_ID": "referralgps",
+    "GOOGLE_APPLICATION_CREDENTIALS": "C:\\Source\\twitch-alexa-skill\\twitch-alexa-skill\\referralgps-7e2868c34677.json",
+    "TABLE_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=channelpoints;AccountKey=hUiLAd90LExohD/mGEjP6S/lAL4VJqRWGj4S0NCxreAom18fxM/6+/RwXhltDodKlZc+Ft6CtLge+NlQ/w9dtw==;EndpointSuffix=core.windows.net"
+  }
+}
