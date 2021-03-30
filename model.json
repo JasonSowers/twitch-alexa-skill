@@ -1,0 +1,664 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "channel points",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "what type of things can you help with",
+            "what all can you do",
+            "what can you do for me",
+            "how can I get started",
+            "how can you help me",
+            "show me around",
+            "I'm new here so can you show me around"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "ManageRedemptions",
+          "slots": [
+            {
+              "name": "redemptions",
+              "type": "Redemptions"
+            },
+            {
+              "name": "allorsingle",
+              "type": "AllOrSingle",
+              "samples": [
+                "{allorsingle} please",
+                "handle them {allorsingle}",
+                "I want to hadle them {allorsingle}",
+                "{allorsingle} ",
+                "lets do {allorsingle}",
+                "how about {allorsingle}",
+                "lets do them {allorsingle}",
+                "I want to do them {allorsingle}"
+              ]
+            }
+          ],
+          "samples": [
+            "check my {redemptions} {allorsingle}",
+            "i want to hear my {redemptions} {allorsingle}",
+            "I want to check my {redemptions} {allorsingle}",
+            "i want to manage my {redemptions} {allorsingle}",
+            "please tell me my {redemptions} {allorsingle}",
+            "can you tell me my {redemptions}",
+            "let me know my {redemptions}",
+            "tell me my {redemptions}",
+            "tel me redemption {redemptions}",
+            "manage my {redemptions}",
+            "check my my {redemptions}"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": [
+            "you bet your ass",
+            "fuck yeah",
+            "hell yeah "
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": [
+            "not a chance",
+            "fuck no",
+            "hell no"
+          ]
+        },
+        {
+          "name": "CreateReward",
+          "slots": [
+            {
+              "name": "title",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "umm {title}",
+                "how about {title}",
+                "lets call it {title}",
+                "{title}"
+              ]
+            },
+            {
+              "name": "cost",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{cost} "
+              ]
+            }
+          ],
+          "samples": [
+            "new channel point card",
+            "new channel point reward",
+            "make a new reward",
+            "new reward",
+            "create reward",
+            "create a channel point reward",
+            "create new reward that costs",
+            "create a new reward with the name {title} ",
+            "create a new channel point reward called {title} ",
+            "I want to create a new reward "
+          ]
+        },
+        {
+          "name": "DeleteReward",
+          "slots": [
+            {
+              "name": "title",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "its name it {title}",
+                "sure its {title}",
+                "the title is {title}",
+                "{title}"
+              ]
+            },
+            {
+              "name": "delete",
+              "type": "Delete"
+            },
+            {
+              "name": "cost",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "the cost is {cost} and I want to {delete} it",
+            "lets {delete} a reward with the cost of {cost} ",
+            "{delete} a reward that costs {cost}",
+            "I want to {delete} a reward with the cost of {cost}",
+            "we're going to {delete} a reward ",
+            "{delete} reward please",
+            "i would like to {delete} a reward",
+            "how about we {delete} a reward",
+            "how about {delete} a reward",
+            "{delete} reward",
+            "lets {delete} a reward",
+            "can i {delete} a reward please",
+            "I want to {delete} a reward"
+          ]
+        },
+        {
+          "name": "RewardIdeas",
+          "slots": [
+            {
+              "name": "twitch",
+              "type": "Twitch"
+            }
+          ],
+          "samples": [
+            "can i hear some channel point suggestions from {twitch}",
+            "can you suggest reward ideas",
+            "I want ideas for rewards",
+            "i want reward ideas",
+            "I need reward ideas",
+            "i need suggestions",
+            "i need ideas",
+            "i need some ideas",
+            "what are some rewards",
+            "I can't think of a reward to make",
+            "show me reward ideas",
+            "what kind of reward should I make",
+            "can you suggest some reward ideas",
+            "what are some rewars you can suggest",
+            "reward ideas",
+            "Tell me some reward ideas"
+          ]
+        },
+        {
+          "name": "PromptMessage",
+          "slots": [
+            {
+              "name": "message",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "Message {message}"
+              ]
+            }
+          ],
+          "samples": [
+            "Message {message} "
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "Redemptions",
+          "values": [
+            {
+              "name": {
+                "value": "alerts"
+              }
+            },
+            {
+              "name": {
+                "value": "alert"
+              }
+            },
+            {
+              "name": {
+                "value": "requests",
+                "synonyms": [
+                  "request"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "redemption",
+                "synonyms": [
+                  "redemptions"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "approvals"
+              }
+            },
+            {
+              "name": {
+                "value": "notifications",
+                "synonyms": [
+                  "notification"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "messages",
+                "synonyms": [
+                  "message"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "AllOrSingle",
+          "values": [
+            {
+              "id": "single",
+              "name": {
+                "value": "one by one",
+                "synonyms": [
+                  "one by one",
+                  "1 by 1",
+                  "1 at a time",
+                  "indiadial",
+                  "individually",
+                  "one at a time"
+                ]
+              }
+            },
+            {
+              "id": "all",
+              "name": {
+                "value": "all of them",
+                "synonyms": [
+                  "the whole",
+                  "all at once",
+                  "all of them",
+                  "all togerther",
+                  "All at one time",
+                  "All at once"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Create",
+          "values": [
+            {
+              "name": {
+                "value": "make another new reward"
+              }
+            },
+            {
+              "name": {
+                "value": "create another"
+              }
+            },
+            {
+              "name": {
+                "value": "build another"
+              }
+            },
+            {
+              "name": {
+                "value": "build new"
+              }
+            },
+            {
+              "name": {
+                "value": "a new reward"
+              }
+            },
+            {
+              "name": {
+                "value": "create"
+              }
+            },
+            {
+              "name": {
+                "value": "create a"
+              }
+            },
+            {
+              "name": {
+                "value": "make new"
+              }
+            },
+            {
+              "name": {
+                "value": "put together"
+              }
+            },
+            {
+              "name": {
+                "value": "construct"
+              }
+            },
+            {
+              "name": {
+                "value": "build"
+              }
+            },
+            {
+              "name": {
+                "value": "make a"
+              }
+            },
+            {
+              "name": {
+                "value": "create new"
+              }
+            },
+            {
+              "name": {
+                "value": "new reward"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Delete",
+          "values": [
+            {
+              "name": {
+                "value": "eradicate"
+              }
+            },
+            {
+              "name": {
+                "value": "rid"
+              }
+            },
+            {
+              "name": {
+                "value": "banish"
+              }
+            },
+            {
+              "name": {
+                "value": "get rid"
+              }
+            },
+            {
+              "name": {
+                "value": "get rid of"
+              }
+            },
+            {
+              "name": {
+                "value": "kill"
+              }
+            },
+            {
+              "name": {
+                "value": "remove"
+              }
+            },
+            {
+              "name": {
+                "value": "delete"
+              }
+            },
+            {
+              "name": {
+                "value": "wipe out"
+              }
+            },
+            {
+              "name": {
+                "value": "annihilate"
+              }
+            },
+            {
+              "name": {
+                "value": "exterminate"
+              }
+            },
+            {
+              "name": {
+                "value": "Destroy"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Twitch",
+          "values": [
+            {
+              "name": {
+                "value": "twitch tv"
+              }
+            },
+            {
+              "name": {
+                "value": "twitch dot tv"
+              }
+            },
+            {
+              "name": {
+                "value": "twitch"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "ManageRedemptions",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "redemptions",
+              "type": "Redemptions",
+              "confirmationRequired": false,
+              "elicitationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "allorsingle",
+              "type": "AllOrSingle",
+              "confirmationRequired": true,
+              "elicitationRequired": true,
+              "prompts": {
+                "confirmation": "Confirm.Slot.1381483379050.677013151316",
+                "elicitation": "Elicit.Slot.1381483379050.677013151316"
+              }
+            }
+          ]
+        },
+        {
+          "name": "CreateReward",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "title",
+              "type": "AMAZON.SearchQuery",
+              "confirmationRequired": false,
+              "elicitationRequired": true,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1053525724307.600650481621"
+              }
+            },
+            {
+              "name": "cost",
+              "type": "AMAZON.NUMBER",
+              "confirmationRequired": false,
+              "elicitationRequired": true,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1053525724307.503135327546"
+              },
+              "validations": [
+                {
+                  "type": "isGreaterThanOrEqualTo",
+                  "prompt": "Slot.Validation.153478882966.1031650690182.890238580797",
+                  "value": "1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "DeleteReward",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "title",
+              "type": "AMAZON.SearchQuery",
+              "confirmationRequired": true,
+              "elicitationRequired": true,
+              "prompts": {
+                "confirmation": "Confirm.Slot.1589377313457.1012622241770",
+                "elicitation": "Elicit.Slot.1589377313457.1012622241770"
+              }
+            },
+            {
+              "name": "delete",
+              "type": "Delete",
+              "confirmationRequired": false,
+              "elicitationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "cost",
+              "type": "AMAZON.NUMBER",
+              "confirmationRequired": false,
+              "elicitationRequired": false,
+              "prompts": {}
+            }
+          ]
+        },
+        {
+          "name": "PromptMessage",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "message",
+              "type": "AMAZON.SearchQuery",
+              "confirmationRequired": true,
+              "elicitationRequired": true,
+              "prompts": {
+                "confirmation": "Confirm.Slot.1469716949994.1246955719722",
+                "elicitation": "Elicit.Slot.1469716949994.1246955719722"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Confirm.Slot.1381483379050.677013151316",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Just to be sure, you want to handle them {allorsingle} ?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1381483379050.677013151316",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Would you like to handle your redemptions all at once, or one at a time?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1053525724307.600650481621",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What would you like the title of the reward to be?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1053525724307.503135327546",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "How many channel points should it cost?"
+          },
+          {
+            "type": "PlainText",
+            "value": "How much should it cost in channel points?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.1589377313457.1012622241770",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "I heard, {title} .  Is that correct?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1589377313457.1012622241770",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Can you please give me the exact title of the card?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.153478882966.1031650690182.890238580797",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "The cost must one, or larger, and please only say a number. How much would you like it to cost in channel points?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.153478882966.61213142036.203593236908",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please answer Yes or No."
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.1469716949994",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "hi"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1469716949994.1246955719722",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What would you like the message to say to the viewer upon redemption?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.1469716949994.1246955719722",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "I heard {message} . Is that correct?"
+          }
+        ]
+      }
+    ]
+  }
+}
