@@ -97,7 +97,7 @@ namespace twitch_alexa_skill.Services
             var redemptionsList = new List<RewardRedemption>();
             foreach (var id in rewardIds)
             {
-                var client = new RestClient($"https://api.twitch.tv/helix/channel_points/custom_rewards/redemptions?broadcaster_id=42403530&reward_id={id}&status=UNFULFILLED");
+                var client = new RestClient($"https://api.twitch.tv/helix/channel_points/custom_rewards/redemptions?broadcaster_id={broadcasterId}&reward_id={id}&status=UNFULFILLED");
                 client.Timeout = -1;
                 var request = new RestRequest(Method.GET);
                 request.AddHeader("Client-Id", Environment.GetEnvironmentVariable("TWITCH_CLIENT_ID"));
